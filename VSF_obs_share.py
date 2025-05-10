@@ -129,8 +129,8 @@ def make_vsf_plot(d_max=600,n_bins=200,check_Guassian=False):
  upper_v=v_diff_mean_smooth+error_mean_smooth
  plt.loglog(dist_array_kpc,v_diff_mean,marker="o",linestyle="None",markersize=4,color="C0")
  plt.fill_between(dist_array_kpc[:-19],lower_v[:-19],upper_v[:-19],color="C0",alpha=0.2)
- plt.xlabel("separation (kpc)")
- plt.ylabel(r"$|\delta v|\, \rm (km/s)$")
+ plt.xlabel("$\ell$ (kpc)")
+ plt.ylabel(r"$\langle|\delta v|\rangle\$ (km s$^{-1}$)")
  plt.legend(loc="lower right", prop={'size': 16})
  plt.ylim(4,200)
  plt.xlim(dist_array_kpc[0]*0.9,6)
